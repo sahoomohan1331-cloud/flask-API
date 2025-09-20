@@ -3,39 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %} My Website{% endblock %}</title>
+    <title>{% block title %} My feedback site{% endblock %}</title>
     <style>
-        body { font-family: Arial,Helvetica, sans-serif; padding: 20px; }
-        header {background: #333; color: white; padding: 10px ; text-align: center;}
-        footer{background: yellow; color: white; padding: 10px ; text-align: center;}        
+        body {font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 20px;background-color: blue;}
+        header, footer {background: #333; color: white; padding: 10px ; text-align: center;}
+        nav a {margin: 0 10px; color: white; text-decoration: none;}
+        main{
+            background: white; padding: 20px; margin-top: 20px; border-radius: 8px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h2>Mohan's Website</h2>
+        <h1>Feedback page</h1>
         <nav>
-            <a href="/">Home</a> |
-            <a href="/about">About</a>
+            <a href="/feedback">Feedback</a>
         </nav>
     </header>
-    {% block content %}{% endblock %}
-</body>
     <main>
-        <h1>Hello {{name}}</h1>
-        <p>You are a topper</p>
+        {% block content %}{% endblock %}
     </main>
-    <footer>
-        <p>@2025 CODINGWISE ACADEMY INDIA'S BEST IT TRAINING AND PLACEMENT INSTITUTE</p>
-    </footer>
 </body>
-</html>
-<ul>
-    <li>Maths</li>
-    <li>Science</li>
-    <li>History</li>
-</ul>
-</form>
-<body>
-</body>
-    
 </html>
