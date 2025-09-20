@@ -1,0 +1,30 @@
+login page
+accept username&passwordsession store
+redirect welcome pagelogout
+
+python -m venv venv
+venv\Scripts\activate
+
+Forms 
+1-name
+2-post
+3-make sure match
+
+_____________________________
+
+JINJA 2
+
+1-PYTHON VALUES
+{{ VARIABLE }}
+{{ NAME }}
+<P>welcome {{name}}</P>
+
+2-conditionals
+is_topper = true
+
+{% if is_topper %}
+<p>You are topper</p>
+
+{% else %}
+<p>you need to work hard</p>
+{% if %}..{% endif %}

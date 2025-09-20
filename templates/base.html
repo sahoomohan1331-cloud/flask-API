@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} My Website{% endblock %}</title>
+    <style>
+        body { font-family: Arial,Helvetica, sans-serif; padding: 20px; }
+        header {background: #333; color: white; padding: 10px ; text-align: center;}
+        footer{background: yellow; color: white; padding: 10px ; text-align: center;}        
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Mohan's Website</h2>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/about">About</a>
+        </nav>
+    </header>
+    {% block content %}{% endblock %}
+</body>
+    <main>
+        <h1>Hello {{name}}</h1>
+        <p>You are a topper</p>
+    </main>
+    <footer>
+        <p>@2025 CODINGWISE ACADEMY INDIA'S BEST IT TRAINING AND PLACEMENT INSTITUTE</p>
+    </footer>
+</body>
+</html>
+<ul>
+    <li>Maths</li>
+    <li>Science</li>
+    <li>History</li>
+</ul>
+</form>
+<body>
+</body>
+    
+</html>
